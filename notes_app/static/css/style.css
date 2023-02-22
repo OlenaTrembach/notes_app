@@ -1,0 +1,52 @@
+/* Стили для центрирования формы */
+      #login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      /* Стили для формы */
+      form {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        width: 400px;
+      }
+      /* Стили для поля ввода */
+      input[type="text"],
+      input[type="password"] {
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      /* Стили для кнопки */
+      button[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+        margin: 10px 0;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      /* Стили для заголовка */
+      h1 {
+        text-align: center;
+        margin: 100px;
+        padding: 20px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+      }

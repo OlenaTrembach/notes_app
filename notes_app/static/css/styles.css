@@ -1,0 +1,132 @@
+/* Стили для всей страницы */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для контейнера страницы */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1px 20px;
+
+}
+
+/* Стили для заголовка */
+h1 {
+  text-align: center;
+  background-color: #2e6da4;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Стили для формы создания новых записей */
+form.my_form {
+ 
+margin-top: 40px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        width: 90%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: green;
+}
+
+/* Стили для списка записей */
+h2 {
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffcc;
+}
+
+.notebook {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.notes {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #C0392B;
+}
+.note {
+  background-color: #FFF2CC;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* задаем ширину колонок */
+  gap: 20px; /* задаем промежуток между формами */
+}
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+      

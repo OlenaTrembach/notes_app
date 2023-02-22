@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Моя записная книжка</title>
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+	<div class="container">
+		
+
+
+  
+<form class="my_form">
+			<label for="title">Заголовок</label>
+			<input type="text" name="title" id="title">
+
+			<label for="content">Содержание</label>
+			<textarea name="content" id="content"></textarea>
+
+			<input type="submit" value="Добавить">
+		</form>
+
+		<h2>Записи</h2>
+        <ul>
+            {% for i in my2 %}
+                <li>
+                    <h3>{{ i.title }}</h3>
+                    <p>{{ i.content }}</p>
+
+                    <div class="actions">
+            <button class="edit-btn">Редактировать</button>
+            <button class="delete-btn">Удалить</button>
+          </div>
+
+                </li>
+            {% endfor %}
+
+        </ul>
+
+
+	</div>
+</body>
+</html>
