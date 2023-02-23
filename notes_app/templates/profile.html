@@ -29,7 +29,13 @@
             {% for i in my2 %}
                 <li>
                     <h3>{{ i.title }}</h3>
-                    <p>{{ i.content }}</p>
+                    <p>{{ i.text }}</p>
+                    {% if i.reminder %}
+                         <p>Выполнить до: {{ i.reminder }}</p>
+                    {% endif %}
+
+
+                    <p>{{ i.get_type_display }}</p>
 
                     <div class="actions">
             <button class="edit-btn">Редактировать</button>
