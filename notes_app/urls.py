@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from notes.forms import *
+from notes.views import NotesFormView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('notes/', include('notes.urls'))
+    path('notes/', include('notes.urls')),
+    path('notes/form', NotesFormView.as_view())
 ]

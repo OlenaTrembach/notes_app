@@ -10,19 +10,18 @@
 </head>
 <body>
 	<div class="container">
-		
-
-
+		<br>
+        <br>
+        <br>
+        <a class="form" href="/notes/form">Создать новую задачу</a>
+                <ul class="menu">
+					<li><a href="/notes/notes_list">All</a></li>
+					<li><a href="/notes/notes_list?type=1">Важные срочные</a></li>
+					<li><a href="/notes/notes_list?type=2">Важные не срочные</a></li>
+					<li><a href="/notes/notes_list?type=3">Неважные срочные</a></li>
+                    <li><a href="/notes/notes_list?type=4">Неважные не срочные</a></li>
+				</ul>
   
-<form class="my_form">
-			<label for="title">Заголовок</label>
-			<input type="text" name="title" id="title">
-
-			<label for="content">Содержание</label>
-			<textarea name="content" id="content"></textarea>
-
-			<input type="submit" value="Добавить">
-		</form>
 
 		<h2>Записи</h2>
         <ul>
@@ -38,8 +37,9 @@
                     <p>{{ i.get_type_display }}</p>
 
                     <div class="actions">
-            <button class="edit-btn">Редактировать</button>
-            <button class="delete-btn">Удалить</button>
+
+                        <a class="form" href="/notes/delete?my_id={{ i.id }}">Удалить</a>
+
           </div>
 
                 </li>
